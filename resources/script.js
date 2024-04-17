@@ -11,58 +11,41 @@ document.addEventListener("DOMContentLoaded", function() {
     const sourcesSection = document.querySelector(".sources");
   
     whoIsCard.addEventListener("click", () => {
-      // Set display value of "whoIs" section to grid
       whoIsSection.style.display = "grid";
-  
-      // Set display value of other sections to none
       innovationsSection.style.display = "none";
       cropsSection.style.display = "none";
       writtenSection.style.display = "none";
       sourcesSection.style.display = "none";
     });
     innovationsCard.addEventListener("click", () => {
-        // Set display value of "whoIs" section to grid
         innovationsSection.style.display = "grid";
-
-        // Set display value of other sections to none
         whoIsSection.style.display = "none";
         cropsSection.style.display = "none";
         writtenSection.style.display = "none";
         sourcesSection.style.display = "none";
     });
     writtenCard.addEventListener("click", () => {
-        // Set display value of "whoIs" section to grid
+        
         writtenSection.style.display = "block";
-
-        // Set display value of other sections to none
         whoIsSection.style.display = "none";
         cropsSection.style.display = "none";
         innovationsSection.style.display = "none";
         sourcesSection.style.display = "none";
     });
     sourcesCard.addEventListener("click", () => {
-        // Set display value of "whoIs" section to grid
-        sourcesCard.style.display = "flex";
-
-        // Set display value of other sections to none
+        sourcesSection.style.display = "block";
         whoIsSection.style.display = "none";
         cropsSection.style.display = "none";
         innovationsSection.style.display = "none";
         writtenSection.style.display = "none";
     });
     cropsCard.addEventListener("click", () => {
-        // Set display value of "whoIs" section to grid
         cropsSection.style.display = "flex";
-
-        // Set display value of other sections to none
         whoIsSection.style.display = "none";
-        sourcesCard.style.display = "none";
+        sourcesSection.style.display = "none";
         innovationsSection.style.display = "none";
         writtenSection.style.display = "none";
     });
-    
-
-
   });
 
   
